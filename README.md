@@ -49,7 +49,7 @@ pnpm dlx shadcn@latest add https://jb.desishub.com/r/zustand-cart.json
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://stripe-ui-component.vercel.app/r/stripe-ui-component.json
+pnpm dlx shadcn@latest add https://stripe-ui-component.desishub.com/r/stripe-ui-component.json
 ```
 
 ### Add Prisma Models

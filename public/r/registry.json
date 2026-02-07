@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "stripe-ui-component",
-  "homepage": "https://stripe-ui-component.vercel.app",
+  "homepage": "https://stripe-ui-component.desishub.com",
   "items": [
     {
       "name": "stripe-ui-component",
