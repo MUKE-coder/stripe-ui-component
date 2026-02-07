@@ -1,0 +1,18 @@
+I have a fresh nextjs app, Before i tell you what we will build , let me give you a background here
+I have built 4 re-usable components that i think the nextjs community have liked so much, here the the components
+
+- The first One is called Better auth ui components and you can read its docs here https://jb.desishub.com/blog/jb-better-auth-ui-components
+- The second one is called File storage UI component and its docs is here https://jb.desishub.com/blog/file-storage-ui
+- The third one is Re-usable zustand cart and its doc is this one https://jb.desishub.com/blog/zustand-cart-component
+- The fourth one is Multi step component and its doc is https://jb.desishub.com/blog/multi-step-form-component
+  NOW I want you to read the usage of these components, And today i want to build a fifth component called stripe-ui-component
+  Here is what i want you to do is to
+- first install better-auth-ui component, this will add authentication system, prisma 7 and dashboard
+- Then install file storage ui, This will add file management system, it will add an example pages of using this system like the categories page and file-storage pages
+- Then we will install the zuztand cart and this will add the product add to cart functionality and it will also add zustand, it will add the button to checkout
+- Then we will start from here, the project now has alot of things, but lets put them together
+  I WANT now to create our new compoent which will be the stripe ui components, The main purpose of this component is to add Stripe checkout to project, You will create Create a checkout page and then use cart items [the cart items needs to have images], You also need to make sure user can add his delivery address, The you will also create the order confirmation page where the user will redirect after the payment. For the user to be able to add his card on the page we will use stripe elements read about them here https://stripe.com/payments/elements and here https://docs.stripe.com/payments/payment-element
+  Then remember in our project we alread have auth (which means stripe page will be protected), we also have prisma and database setup, so which means you need to seed some 10 Products with 2 categories in the db, so the Products will have a one to many relationship withcategories but not required, The product should also have image field, so then you will fetch these products in the products page where we add them to cart and proceed to checkout. so in prisma schema we will add the products table, we will add the Order, Order item, and others that you will find necessary,
+  When a user goes to checkout, and clicks pay now, we will check if the products are already in stripe or not and if they are not added we create them before we generate the chckout link, we will also add pages in the dashboard like My Orders where we can display the user orders, so please add all other things that i might not explained but they are necessary for stripe checkout, we will not use the stripe webhook to verify the purchase on the order confirmation we will use the stripe purchase id as a param to verify the purchase and update the order payment status,
+  After you done all this and the component is working i manually test the component and then you will proceed to turning it a registry component, there are some notes i have added for you in shadcn-registry.md file in root and nextjs-with-prisma7.md, just in case you need to refer to them
+  NOTE : yOU CAN ASK ME ANY CLARIFYING QUESTIONS using the AskQuestionTool and You are also allowed to put your own creativity for this component to work correctly.

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "stripe-ui-component",
+  "homepage": "https://stripe-ui-component.vercel.app",
+  "items": [
+    {
+      "name": "stripe-ui-component",
+      "type": "registry:block",
+      "title": "Stripe UI Component",
+      "description": "A complete Stripe checkout solution for Next.js with Payment Element, order management, product grid, and checkout flow. Built with Stripe, Prisma, Zustand, and shadcn/ui.",
+      "dependencies": [
+        "stripe",
+        "@stripe/stripe-js",
+        "@stripe/react-stripe-js"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label",
+        "badge",
+        "table",
+        "separator",
+        "skeleton"
+      ],
+      "files": [
+        {
+          "path": "components/stripe/stripe-provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/checkout-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/checkout-page.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/address-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/order-summary.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/order-confirmation.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/order-history.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/product-grid.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/stripe/index.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "lib/stripe.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "app/api/stripe/create-payment-intent/route.ts",
+          "type": "registry:file",
+          "target": "app/api/stripe/create-payment-intent/route.ts"
+        },
+        {
+          "path": "app/api/stripe/verify-payment/route.ts",
+          "type": "registry:file",
+          "target": "app/api/stripe/verify-payment/route.ts"
+        },
+        {
+          "path": "app/products/page.tsx",
+          "type": "registry:page",
+          "target": "app/products/page.tsx"
+        },
+        {
+          "path": "app/checkout/page.tsx",
+          "type": "registry:page",
+          "target": "app/checkout/page.tsx"
+        },
+        {
+          "path": "app/order-confirmation/page.tsx",
+          "type": "registry:page",
+          "target": "app/order-confirmation/page.tsx"
+        },
+        {
+          "path": "app/dashboard/orders/page.tsx",
+          "type": "registry:page",
+          "target": "app/dashboard/orders/page.tsx"
+        },
+        {
+          "path": "app/dashboard/orders/[id]/page.tsx",
+          "type": "registry:page",
+          "target": "app/dashboard/orders/[id]/page.tsx"
+        }
+      ],
+      "envVars": {
+        "STRIPE_SECRET_KEY": "",
+        "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": ""
+      }
+    }
+  ]
+}
